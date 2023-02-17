@@ -20,7 +20,7 @@ type AddOn struct {
 	TargetVersion          string      `json:"targetVersion,omitempty"`
 	Version                string      `json:"version,omitempty"`
 	VlanSpanningRequired   bool        `json:"vlan_spanning_required"`
-	InstallOptionsTemplate interface{} `json:"installOptionsTemplate"`
+	InstallOptionsTemplate interface{} `json:"installOptionsTemplate,omitempty"`
 }
 
 // GetAddOns ...
