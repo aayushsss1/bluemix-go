@@ -45,6 +45,7 @@ type AddOnsResponse struct {
 type AddOns interface {
 	GetAddons(clusterName string, target ClusterTargetHeader) ([]AddOn, error)
 	ConfigureAddons(clusterName string, params *ConfigureAddOns, target ClusterTargetHeader) (AddOnsResponse, error)
+	ListAddons() ([]AddOn, error)
 }
 
 type addons struct {
